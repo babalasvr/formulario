@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left > h1{
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+.leftimg{
+    width: 30vw;
+}
+
+.right{
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.form > h1{
+    color: #77ffc0;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 3px 0px;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 3px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 10pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.btn{
+    margin: 20px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: #77ffc0;
+    color: #2f2841;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 10px 25px #00FF8052;
+}
+
+.form2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cadastro{
+    color: #f0ffffde;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px)
+{
+    .form{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .main{
+       flex-direction: column;
+    }
+
+    .left > h1{
+        font-size: 8vw;
+    }
+
+    .left{
+        width: 100%;
+        height: auto;
+    }
+
+    .right{
+        width: 100%;
+        height: auto;
+    }
+
+    .leftimg{
+        width: 70vw;
+    }
+    
+    .form{
+        width: 90%;
+    }
+}

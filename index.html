@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Faça login<br>E entre para o nosso time</h1>
+            <img class="leftimg" src="./bitcoin.svg" alt="bitcoin">
+        </div>
+        <div class="right">
+            <div class="form">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" id="nome" placeholder="Usuario">
+                </div>
+                <div class="textfield">
+                    <label for="Senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Senha">
+                </div>
+                <div class="form2">
+                    <button class="btn">Login</button>
+                    <label for="cadastro" class="cadastro" onclick="clicar()">Cadastre-se</label>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <script>        
+        function clicar()
+         {
+            var cadastrar = document.querySelector("label.cadastro")
+            cadastrar.innerHTML = 'ok'
+         }
+    </script>
+    
+</body>
+</html>
