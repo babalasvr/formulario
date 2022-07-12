@@ -7,35 +7,16 @@ body *{
 }
 
 .main{
+    display: flex;
+    justify-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100vw;
     height: 100vh;
     background: #201b2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.left{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.left > h1{
-    font-size: 3vw;
-    color: #77ffc0;
-}
-
-.leftimg{
-    width: 30vw;
-}
-
-.right{
-    width: 30vw;
+.aform{
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -43,7 +24,8 @@ body *{
 }
 
 .form{
-    width: 75%;
+    width: 25%;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +43,7 @@ body *{
 }
 
 .textfield{
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -88,8 +70,11 @@ body *{
 }
 
 .btn{
-    margin: 20px;
-    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
     padding: 10px;
     border-radius: 10px;
     font-weight: 800;
@@ -109,48 +94,4 @@ body *{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.cadastro{
-    color: #f0ffffde;
-    font-weight: 600;
-    text-align: center;
-    display: flex;
-    margin-top: -15px;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 950px)
-{
-    .form{
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 600px)
-{
-    .main{
-       flex-direction: column;
-    }
-
-    .left > h1{
-        font-size: 8vw;
-    }
-
-    .left{
-        width: 100%;
-        height: auto;
-    }
-
-    .right{
-        width: 100%;
-        height: auto;
-    }
-
-    .leftimg{
-        width: 70vw;
-    }
-    
-    .form{
-        width: 90%;
-    }
 }
